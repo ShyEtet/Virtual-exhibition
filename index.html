@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<title>Геленджикский историко-краеведческий музей</title>
+
+	   <script src="/js/zoomer/jquery-1.8.3.min.js"></script>
+	   <script src="/js/zoomer/zoomsl-3.0.min.js"></script>
+
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="js/lib/three.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/lib/OrbitControls.js"></script>
+	<script src="js/lib/TweenMax.min.js"></script>
+
+
+
+	<header>
+	<div id="ButtonHello" type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false" 
+		style="z-index: 2; background: rgba(0, 0, 0, 0); opacity: 0.9; position: absolute; text-align: center; top: 0px; left: 0px;">	
+		<section class="topbar-two">
+	 	  <div class="container">
+	    	    <div class="inner-container">
+	        	    <div class="topbar-two__left">
+	            	                    <a class="topbar-two__logo"><img src="img/logo_png-1.png" alt="Logo" width="0" height="0"></a>
+                    </div>            
+	       		</div>
+	       </div>
+		</section>
+	</div>	
+	</header>
+	<div id="Button360" type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false" 
+		style="z-index: 2; background: rgba(0, 0, 0, 0); opacity: 0.9; position: absolute; text-align: center; top: 0px; left: 0px;">
+		<span class="ui-button-text">
+			<img width="120" height="120" src="img/settings.png">
+		</span>
+	</div>
+	<!-- <div id="stopSprite" type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false" 
+		style="z-index: 2; background: rgba(0, 0, 0, 0); opacity: 0.9; position: absolute; text-align: center; top: 120px; left: 0px;">
+		<span class="ui-button-text">
+			<img width="120" height="120" src="img/settings.png">
+		</span>
+	</div> -->
+</head>
+<body>
+  <div id="my_modal1" class="modal">
+    <div class="modal_content">
+      <span id = "span1" class="close_modal_window">&times;</span>
+      	<p class="thumb">
+     	 	<img class="my-foto" src="/img/closely/photo1.jpg" width="1008" height="756" data-large="/img/closely/photo1.jpg"  data-title="Red Valentino" data-help="Используйте колесико мыши для Zoom +/-"/>
+     	 	<img class="my-foto" src="/img/closely/photo2.jpg" width="1008" height="756" data-large="/img/closely/photo2.jpg"  data-title="Red Valentino" data-help="Используйте колесико мыши для Zoom +/-"/>
+     	</p>
+    </div>
+  </div>
+  <div id="my_modal2" class="modal">
+    <div class="modal_content">
+      <span id="span2" class="close_modal_window">&times;</span>
+      <p class="thumb">
+     	 	<img class="my-foto" src="/img/closely/monitor.jpg" width="1024" height="756" data-large="/img/closely/monitor.jpg"  data-title="Red Valentino" data-help="Используйте колесико мыши для Zoom +/-"/>
+      </p>
+    </div>
+  </div>
+   <div id="my_modal3" class="modal">
+    <div class="modal_content">
+      <span id="span3" class="close_modal_window">&times;</span>
+      <p class="thumb">
+     	 	<img class="my-foto" src="/img/closely/sprite3photo1.jpg" width="1024" height="1360" data-large="/img/closely/sprite3photo1.jpg"  data-title="Red Valentino" data-help="Используйте колесико мыши для Zoom +/-"/>
+     	 	<img class="my-foto" src="/img/closely/sprite3photo2.jpg" width="1024" height="1360" data-large="/img/closely/sprite3photo2.jpg"  data-title="Red Valentino" data-help="Используйте колесико мыши для Zoom +/-"/>
+     	 	<img class="my-foto" src="/img/closely/sprite3photo3.jpg" width="1024" height="1360" data-large="/img/closely/sprite3photo3.jpg"  data-title="Red Valentino" data-help="Используйте колесико мыши для Zoom +/-"/>
+      </p>
+    </div>
+  </div>
+
+   <div id="my_modal4" class="modal">
+    <div class="modal_content">
+      <span id="span4" class="close_modal_window">&times;</span>
+      <p class="thumb">
+     	 	<img class="my-foto" src="/img/closely/sprite4photo1.jpg" width="1008" height="1008" data-large="/img/closely/sprite4photo1.jpg"  data-title="Red Valentino" data-help="Используйте колесико мыши для Zoom +/-"/>/>
+      </p>
+    </div>
+  </div>
+
+  <div id="my_modal5" class="modal">
+    <div class="modal_content">
+      <span id="span5" class="close_modal_window">&times;</span>
+      <p class="thumb">
+      		<img class="my-foto" src="/img/closely/sprite5photo3.jpg" width="1024" height="1360" data-large="/img/closely/sprite5photo3.jpg"  data-title="Red Valentino" data-help="Используйте колесико мыши для Zoom +/-"/>/>
+      		<img class="my-foto" src="/img/closely/sprite5photo2.jpg" width="1008" height="1008" data-large="/img/closely/sprite5photo2.jpg"  data-title="Red Valentino" data-help="Используйте колесико мыши для Zoom +/-"/>/>
+     	 	<img class="my-foto" src="/img/closely/sprite5photo4.jpg" width="1008" height="1008" data-large="/img/closely/sprite5photo4.jpg"  data-title="Red Valentino" data-help="Используйте колесико мыши для Zoom +/-"/>/>
+      </p>
+    </div>
+  </div>
+
+  <div id="my_modal6" class="modal">
+    <div class="modal_content">
+      <span id="span6" class="close_modal_window">&times;</span>
+      <p class="thumb">
+     	 	<img class="my-foto" src="/img/closely/sprite6photo1.jpg" width="1024" height="1360" data-large="/img/closely/sprite6photo1.jpg"  data-title="Red Valentino" data-help="Используйте колесико мыши для Zoom +/-"/>/>
+      </p>
+    </div>
+  </div>
+
+  <div id="my_modal7" class="modal">
+    <div class="modal_content">
+      <span id="span7" class="close_modal_window">&times;</span>
+      <p class="thumb">
+     	 	<img class="my-foto" src="/img/closely/sprite7photo1.jpg" width="1024" height="1360" data-large="/img/closely/sprite7photo1.jpg"  data-title="Red Valentino" data-help="Используйте колесико мыши для Zoom +/-"/>/>
+      </p>
+    </div>
+  </div>
+
+   <div id="my_modal8" class="modal">
+    <div class="modal_content">
+      <span id="span8" class="close_modal_window">&times;</span>
+      <p class="thumb">
+     	 	<img class="my-foto" src="/img/closely/sprite8photo1.jpg" width="1024" height="1360" data-large="/img/closely/sprite8photo1.jpg"  data-title="Red Valentino" data-help="Используйте колесико мыши для Zoom +/-"/>/>
+      </p>
+    </div>
+  </div>
+
+  	 <div id="my_modal9" class="modal">
+    <div class="modal_content">
+      <span id="span9" class="close_modal_window">&times;</span>
+      <p class="thumb">
+     	 	<img class="my-foto" src="/img/closely/sprite9photo1.jpg" width="1024" height="1360" data-large="/img/closely/sprite9photo1.jpg"  data-title="Red Valentino" data-help="Используйте колесико мыши для Zoom +/-"/>/>
+      </p>
+    </div>
+  </div>
+
+  <div id="my_modal10" class="modal">
+    <div class="modal_content">
+      <span id="span10" class="close_modal_window">&times;</span>
+      <p class="thumb">
+     	 	<img class="my-foto" src="/img/closely/sprite10photo1.jpg" width="1024" height="1360" data-large="/img/closely/sprite10photo1.jpg"  data-title="Red Valentino" data-help="Используйте колесико мыши для Zoom +/-"/>/>
+      </p>
+    </div>
+  </div>
+
+  <div id="my_modal11" class="modal">
+    <div class="modal_content">
+      <span id="span11" class="close_modal_window">&times;</span>
+      <p class="thumb">
+     	 	<img class="my-foto" src="/img/closely/sprite11photo1.jpg" width="1024" height="1360" data-large="/img/closely/sprite11photo1.jpg"  data-title="Red Valentino" data-help="Используйте колесико мыши для Zoom +/-"/>/>
+      </p>
+    </div>
+  </div>
+
+  <div id="my_modal12" class="modal">
+    <div class="modal_content">
+      <span id="span12" class="close_modal_window">&times;</span>
+      <p class="thumb">
+     	 	<img class="my-foto" src="/img/closely/sprite12photo1.jpg" width="1024" height="1360" data-large="/img/closely/sprite12photo1.jpg"  data-title="Red Valentino" data-help="Используйте колесико мыши для Zoom +/-"/>/>
+      </p>
+    </div>
+  </div>
+
+   <div id="my_modal13" class="modal">
+    <div class="modal_content">
+      <span id="span13" class="close_modal_window">&times;</span>
+      <p class="thumb">
+     	 	<img class="my-foto" src="/img/closely/sprite5photo1.jpg" width="1024" height="1360" data-large="/img/closely/sprite5photo1.jpg"  data-title="Red Valentino" data-help="Используйте колесико мыши для Zoom +/-"/>/>
+      </p>
+    </div>
+  </div>
+
+  <div id="my_modal14" class="modal">
+    <div class="modal_content">
+      <span id="span14" class="close_modal_window">&times;</span>
+      <p class="thumb">
+     	 	<img class="my-foto" src="/img/closely/sprite5photo3.jpg" width="1024" height="1360" data-large="/img/closely/sprite5photo3.jpg"  data-title="Red Valentino" data-help="Используйте колесико мыши для Zoom +/-"/>/>
+      </p>
+    </div>
+  </div>
+
+	<canvas id="canvas"></canvas>
+	<div class="tooltip"></div>
+	<div class="settingAuto"></div>
+<!-- Стиль для лупы -->
+	<style>
+	  .round-loupe{
+	     border-radius: 75px;
+	     border: 5px solid #F0F0F0;
+	  }
+	</style> 
+<!-- Добавление лупы -->
+	  <script>
+	   jQuery(function(){	   
+	      $(".my-foto").imagezoomsl({
+		 	   innerzoommagnifier: true,
+		       classmagnifier: window.external ? window.navigator.vendor === "Yandex" ? "" : "round-loupe" : "",
+		       magnifierborder: "5px solid #F0F0F0",                                 
+		       zoomrange: [2, 8],
+		       zoomstart: 2,
+		       magnifiersize: [200, 200]		 
+	      });
+	   });   
+	</script>
+
+</div>
+</body>
+</html>

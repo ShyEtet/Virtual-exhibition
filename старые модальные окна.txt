@@ -1,0 +1,44 @@
+<!-- <div id="my_modal1" class="modal">
+    <div class="modal_content">
+      <span id = "span1" class="close_modal_window">&times;</span>
+      	<p class="thumb">
+     	 	<img class="center" src="/img/closely/photo1.jpg"/>
+      		<img class="center" src="/img/closely/photo2.jpg"/>
+      	</p>
+    </div>
+  </div>  -->
+  <div id="my_modal1" class="modal">
+    <div class="modal_content">
+      <span id = "span1" class="close_modal_window">&times;</span>
+      	<p class="thumb">
+     	 	<img class="my-foto" src="/img/closely/photo1.jpg" width="1008" height="756" data-large="/img/closely/photo1.jpg"  data-title="Red Valentino" data-help="Используйте колесико мыши для Zoom +/-"/>
+     	 	<img class="my-foto" src="/img/closely/photo2.jpg" width="1008" height="756" data-large="/img/closely/photo2.jpg"  data-title="Red Valentino" data-help="Используйте колесико мыши для Zoom +/-"/>
+     	</p>
+    </div>
+  </div>
+  <div id="my_modal2" class="modal">
+    <div class="modal_content">
+      <span id="span2" class="close_modal_window">&times;</span>
+      <p class="thumb">
+     	 	<img class="center" src="/img/closely/monitor.jpg"/>
+      </p>
+    </div>
+  </div>
+   <div id="my_modal3" class="modal">
+    <div class="modal_content">
+      <span id="span3" class="close_modal_window">&times;</span>
+      <p class="thumb">
+     	 	<img class="center" src="/img/closely/sprite3photo1.jpg"/>
+     	 	<img class="center" src="/img/closely/sprite3photo2.jpg"/>
+     	 	<img class="center" src="/img/closely/sprite3photo3.jpg"/>
+      </p>
+    </div>
+  </div>
+   <div id="my_modal4" class="modal">
+    <div class="modal_content">
+      <span id="span4" class="close_modal_window">&times;</span>
+      <p class="thumb">
+     	 	<img class="center" src="/img/closely/sprite4photo1.jpg"/>
+      </p>
+    </div>
+  </div>
